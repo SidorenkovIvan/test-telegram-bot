@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-  background-color: $black;
+  background-color: $secondaryBgColor;
   scroll-behavior: smooth;
 }
 
@@ -17,84 +17,95 @@ p {
 
 //Typography
 h1 {
-  font-family: $font-face-primary;
-  font-weight: $extra-bold;
-  font-size: 92px;
-  line-height: 88px;
-  text-transform: uppercase;
+  font-family: $font-face-secondary;
+  font-weight: $bold;
+  font-size: 24px;
+  line-height: $defaultLineHeight;
+  color: $textColor;
+  margin: 0;
 }
 
 h2 {
-  font-family: $font-face-primary;
-  font-weight: $extra-bold;
-  font-size: $mediumHeadingFontSize;
-  line-height: $mediumHeadingLineHeight;
+  font-family: $font-face-secondary;
+  font-weight: $semi-bold;
+  font-size: 30px;
+  line-height: $defaultLineHeight;
+  color: $textColor;
   margin: 0;
-  text-transform: uppercase;
+}
+
+h3 {
+  font-family: $font-face-secondary;
+  font-weight: $semi-bold;
+  font-size: 20px;
+  line-height: $defaultLineHeight;
+  color: $textColor;
+  margin: 0;
 }
 
 h4 {
   font-family: $font-face-secondary;
-  font-weight: $bold;
-  font-size: $mediumParagraphFontSize;
-  line-height: $mediumParagraphLineHeight;
+  font-weight: $semi-bold;
+  font-size: 15px;
+  line-height: $defaultLineHeight;
+  color: $textColor;
+  margin: 0;
+}
+
+.item {
+  font-family: $font-face-secondary;
+  font-weight: $medium;
+  font-size: 15px;
+  line-height: $defaultLineHeight;
+  color: $hintColor;
+}
+
+.link {
+  font-family: $font-face-secondary;
+  font-weight: $medium;
+  font-size: 15px;
+  line-height: $defaultLineHeight;
+  color: $linkColor;
 }
 
 button {
   border: none;
+  cursor: pointer;
+  background-color: $buttonColor;
+  border-radius: $defaultBorderRadius;
+  width: 100%;
+  margin: 0 auto;
 
   p {
-    font-family: $font-face-primary;
-    font-weight: $semi-bold;
-    font-size: 24px;
-    line-height: 30px;
+    font-family: $font-face-secondary;
+    font-weight: $medium;
+    font-size: 17px;
+    line-height: $defaultLineHeight;
+    color: $buttonTextColor;
+    padding: 20px 0;
   }
 }
 
-.p1 {
+.textMedium {
   font-family: $font-face-secondary;
   font-weight: $regular;
-  font-size: $largeParagraphFontSize;
-  line-height: $largeParagraphLineHeight;
+  font-size: 15px;
+  line-height: $defaultLineHeight;
+  color: $textColor;
 }
 
-.p2 {
-  font-family: $font-face-secondary;
-  font-weight: $regular;
-  font-size: $mediumParagraphFontSize;
-  line-height: $mediumParagraphLineHeight;
-}
-
-p {
-  font-family: $font-face-secondary;
-  font-weight: $regular;
-  font-size: $smallParagraphFontSize;
-  line-height: $smallParagraphLineHeight;
-}
-
-label {
+.textSmall {
   font-family: $font-face-secondary;
   font-weight: $medium;
-  font-size: $labelFontSize;
-  line-height: $labelLineHeight;
+  font-size: 13px;
+  line-height: $defaultLineHeight;
+  color: $textColor;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-li {
-  display: block;
-}
-
-figure {
-  margin: 0;
-}
-
-@media screen and (max-width: $largeMobile) {
-  html, body {
-    background-size: inherit;
-  }
+.caption {
+  font-family: $font-face-secondary;
+  font-weight: $regular;
+  font-size: 13px;
+  line-height: $defaultLineHeight;
+  color: $textColor;
 }

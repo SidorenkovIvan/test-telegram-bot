@@ -1,5 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import React from 'react';
+import Script from 'next/script';
 
 export default class MyDocument extends Document {
   render() {
@@ -11,6 +12,10 @@ export default class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap"
             rel="stylesheet"
+          />
+          <Script
+            src={'https://telegram.org/js/telegram-web-app.js'}
+            strategy="beforeInteractive"
           />
         </Head>
         <body>

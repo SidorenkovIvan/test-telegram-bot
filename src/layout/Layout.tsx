@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from 'react';
 
 import styles from './Layout.module.scss';
 
-interface ILayoutProps {
+export interface ILayoutProps {
   children: ReactNode;
 }
 

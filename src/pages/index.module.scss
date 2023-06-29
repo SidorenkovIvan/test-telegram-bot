@@ -1,0 +1,40 @@
+.wrapper button {
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-top: 50px;
+}
+
+.descriptionText {
+  margin: 20px 0 36px;
+}
+
+.urlInput {
+  height: 65px;
+  width: calc(100% - 24px);
+  background-color: $bgColor;
+  border: 1px solid $hintColor;
+  border-radius: $defaultBorderRadius;
+  padding-left: 20px;
+  color: $textColor;
+  margin-top: 10px;
+}
+
+.newOrderButton {
+  margin: 16px 0 36px;
+  cursor: pointer;
+}
+
+.orderUrlWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteOrderUrl {
+  margin-right: -24px;
+  padding-left: 12px;
+  cursor: pointer;
+  color: $textColor;
+}
